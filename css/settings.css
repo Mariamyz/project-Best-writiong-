@@ -79,3 +79,22 @@ p.text{
     color: var(--color_p_text);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container-fluid,
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

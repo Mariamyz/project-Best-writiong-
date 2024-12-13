@@ -46,15 +46,7 @@ nav ul li a:hover{
     z-index: 1;
 }
 
-@media screen and (min-width: 1200px) {
-    nav ul li::after{
-        left: 11px;
-    }
-    nav ul li a:hover{
-        box-shadow: -16px 0px 0px var(--color_btn_send_message_hover),
-        16px 0px 0px var(--color_btn_send_message_hover);
-    } 
-}
+
 
 nav ul li:nth-child(9)::after{
     border: none;
@@ -113,5 +105,4 @@ nav .live_chat:hover::after{
 nav .login:hover, nav .live_chat:hover{
     color: var(--color_btn_text_hover);
 } */ */
-
 
