@@ -24,8 +24,9 @@ nav ul li a{
     font-family: Roboto_Regular;
     text-align: center;
     text-decoration: none;
-    padding: 13px 17px ;
-    position: relative;
+    padding: 10px 30px ;
+    text-align: center; 
+    white-space: nowrap; 
 }
 
 nav ul li::after{

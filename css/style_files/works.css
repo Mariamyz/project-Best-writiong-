@@ -186,36 +186,48 @@
 }
 
 .process-section .process-button {
-        margin-top: 50px;
-        width: 300px;
-        height: 35px;
-        background: red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position:relative;
-        text-transform: uppercase;
-        color: var(--color_btn_text);
-        cursor: pointer;
-        border: none;
-        outline: none;
-        font-size: 26px;
-        font-weight: 400;
-        font-family: Roboto_Regular;
-        margin-left: 420px;
-        line-height: 10px; 
-    }
+    margin-top: 50px;
+    width: 300px;
+    height: 35px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--color_btn_text);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    margin: 50px auto; /* Центрування */
+    line-height: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавний перехід */
+}
 
-    .process-button::after{
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 0;
-            border-top: 100px solid red; 
-            border-right: 100px solid transparent;		
-            border-width: 20px 20px 0 0;	
-          
-        }
+.process-button::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0; /* Центруємо трикутник */
+    border-top: 20px solid red; /* Колір трикутника */
+    border-right: 20px solid transparent;
+    transition: border-top-color 0.3s ease; /* Плавний перехід кольору */
+}
+
+/* Ховер для кнопки */
+.process-button:hover {
+    background-color: #800000; /* Бордовий колір кнопки */
+    transform: scale(1.05); /* Невелике збільшення */
+}
+
+/* Ховер для псевдоелемента */
+.process-button:hover::after {
+    border-top-color: #800000; /* Бордовий колір трикутника */
+}
+
 
         @media screen and (max-width: 767px) {
             .process-section .process-button {

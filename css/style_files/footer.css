@@ -72,16 +72,17 @@ footer .down-menu ul li a {
 footer .down-menu ul {
     display: flex; 
     justify-content: center; 
+    align-items: center;
     flex-wrap: wrap; 
     padding: 60px;
-    margin: 0px;
-    gap: 20px 10px;
+    margin: 0;
+    gap: 10px 10px;
     list-style-type: none;
 }
 
 footer .down-menu ul li {
     border-right: 1px solid #ffffff; 
-    padding: 0px 10px; 
+    padding: 0px 15px 0px 10px;
     text-align: center; 
     white-space: nowrap; 
     
@@ -117,9 +118,11 @@ footer .down-menu ul li a::after {
     background-color: #ffffff; 
     transition: width 0.3s ease; 
 }
-
-footer .down-menu ul li a:hover::after {
-    width: 100%; 
+footer .down-menu ul li a:hover {
+    background: var(--color_btn_send_message_hover); 
+    color: var(--color_btn_text_hover); 
+    box-shadow: -15px 0px 0px var(--color_btn_send_message_hover), 10px 0px 0px var(--color_btn_send_message_hover); 
+    z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
