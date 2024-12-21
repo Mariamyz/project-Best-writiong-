@@ -1,0 +1,104 @@
+
+.content_section {
+
+    background: url(
+        ../../images/Bg1-1.svg
+    );
+    background-color: var(--color_btn_read_more);
+    padding: 50px 10px 10px 10px;
+
+}
+
+.content_section h2 {
+    background-color: var(--color_btn_read_more_hover);
+    height: 65px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(56, 61, 63, 0.75));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+    max-width: 1300px; 
+    padding: 0 20px; 
+    margin: 0px auto; 
+}
+
+.content_section h2::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 35px solid var(--color_btn_read_more_hover);
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+}
+
+.content_section p {
+    text-align: center;
+    padding: 15px;
+    color: #e9f7fe;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: Roboto_Regular;
+}
+
+.content_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 0 10px;
+    max-width: 1300px; 
+    padding: 0 20px; 
+    margin: 0 auto; 
+
+}
+
+.content_text {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    background: none;
+    gap: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.content_text .step {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 40px;
+    height: 40px;
+    background: #fff; 
+    color: #1b7fd0; 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%; 
+    flex-shrink: 0; 
+    font-family: Roboto_Medium;
+}
+
+.content_text p {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    text-align: start;
+}
+
+@media screen and (max-width: 992px) {
+    .content_items {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content_items {
+        grid-template-columns: 1fr;
+    }
+}

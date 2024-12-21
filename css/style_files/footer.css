@@ -1,0 +1,209 @@
+
+.container-fluid {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
+}
+
+footer {
+    background: var(--color_main_2);
+    background-image: url(../../images/Bg1.svg);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+footer .ulist ul li {
+    font-size: 17px;
+    color: #caddea;
+    font-family: "Roboto_Regular";
+    margin-top: 10px;
+
+}
+
+.cross {
+    position: relative;
+  padding: 10px;
+}
+
+.cross::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #caddea;
+    margin-top: 10px;
+}
+
+.cross img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #caddea;
+   
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+footer .down-menu ul {
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+footer .down-menu ul li a {
+    text-transform: uppercase;
+    font-size: 16px; 
+    color: #ffffff; 
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block;
+}
+
+footer .down-menu ul {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding: 60px;
+    margin: 0px;
+    gap: 20px 10px;
+    list-style-type: none;
+}
+
+footer .down-menu ul li {
+    border-right: 1px solid #ffffff; 
+    padding: 0px 10px; 
+    text-align: center; 
+    white-space: nowrap; 
+    
+}
+
+footer .down-menu ul li:last-child {
+    border-right: none; 
+}
+
+footer .down-menu ul li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .down-menu ul li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+footer .down-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #ffffff; 
+    transition: width 0.3s ease; 
+}
+
+footer .down-menu ul li a:hover::after {
+    width: 100%; 
+}
+
+@media screen and (max-width: 767px) {
+    footer .down-menu ul li {
+        padding: 0px 10px; 
+    }
+
+    footer .down-menu ul li a {
+        font-size: 14px; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .down-menu ul li a::after {
+        content: ''; 
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+        width: 100%; 
+        height: 1px; 
+        background-color: #ffffff; 
+    }
+}
+
+footer .down-menu ul li a:hover::after {
+    background-color: #ffffff; 
+}
+
+footer .down-menu ul li a:hover {
+    color: #ffffff; 
+}
+
+footer .arrow-back,
+footer .login,
+.chat {
+    position: fixed;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    border: 4px solid rgba(155, 182, 190, 0.75);
+    background-color: #1b7fd0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+}
+
+footer .arrow-back::before {
+    content: '';
+    width: 60%; 
+    height: 60%;
+    background-image: url('../../images/arrow-up.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+footer .arrow-back:hover::before {
+    transform: scale(1.1); 
+}
+
+footer .arrow-back {
+    top: 250px;
+    right: 20px;
+    background-color: #013056;
+}
+
+footer .login {
+    top: 150px;
+    right: 20px;
+}
+
+.chat {
+    top: 50px;
+    right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    footer .arrow-back,
+    footer .login,
+    .chat {
+        display: block; 
+    }
+}

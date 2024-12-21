@@ -1,0 +1,227 @@
+
+.process-section .process-wrapper h2 {
+    margin: 30px 2px 35px;
+    height: 65px;
+    width: 100%;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(2, 68, 121, 0.75));
+    background-color: var(--color_btn_read_more_hover);
+    position: relative;
+    display: flex;
+
+}
+
+.process-section{
+   background-image: url(../../images/Bg2.svg);
+   position: absolute;
+}
+
+.process-section .process-wrapper h2::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 35px solid var(--color_btn_read_more_hover);
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.process-section .step-info {
+    height: 68px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+}
+
+.process-section .step-info h4 {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 500;
+    font-family: Roboto_Medium;
+}
+
+.process-section .step-info .step-number {
+    font-size: 50px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #caddea;
+    font-weight: 700;
+    font-family:  Roboto_Bold;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.process-section .step-info::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #caddea;
+}
+
+.process-section .step-info:hover {
+    background-color: #075da2;
+    position: relative;
+    cursor: pointer;
+}
+
+.process-section .step-info:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -29px;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 33px solid transparent;
+    border-left: 30px solid #075da2;
+    z-index: 1;
+}
+
+.process-section .step-info:hover::after {
+    opacity: 0;
+}
+
+.process-section .step-info:hover h4 {
+    color: #ffffff;
+}
+
+.process-section .step-info:hover .step-number {
+    font-size: 49px;
+}
+
+.process-section .step-content {
+    width: 460px;
+    height: 415px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    display: none;
+}
+
+.process-section .step-content img {
+    width: 100px;
+    height: 100px;
+}
+
+.process-section .step-content p {
+    height: 197px;
+    font-size: 18px;
+    color: #000000;
+    font-family: Roboto_Bolt;
+    text-align: left;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0px 30px;
+}
+
+.step-1, .step-2, .step-3, .step-4, .step-5, .step-6 {
+    position: relative;
+}
+
+.content-1 {
+    position: absolute;
+    left: 700px;
+    top: 0;
+    margin-right: 10px;
+}
+
+.content-2 {
+    position: absolute;
+    left: 700px;
+    top: -69px;
+    margin-right: 20px;
+}
+
+.content-3 {
+    position: absolute;
+    left: 700px;
+    top: -137px;
+    margin-right: 20px;
+}
+
+.content-4 {
+    position: absolute;
+    left: 700px;
+    top: -205px;
+    margin-right: 20px;
+}
+
+.content-5 {
+    position: absolute;
+    left: 700px;
+    top: -273px;
+    margin-right: 20px;
+}
+
+.content-6 {
+    position: absolute;
+    left: 700px;
+    top: -340px;
+    margin-right: 20px;
+}
+
+.step-1:hover .content-1, 
+.step-2:hover .content-2, 
+.step-3:hover .content-3,
+.step-4:hover .content-4, 
+.step-5:hover .content-5, 
+.step-6:hover .content-6 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.process-section .process-button {
+        margin-top: 50px;
+        width: 300px;
+        height: 35px;
+        background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        text-transform: uppercase;
+        color: var(--color_btn_text);
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 26px;
+        font-weight: 400;
+        font-family: Roboto_Regular;
+        margin-left: 420px;
+        line-height: 10px; 
+    }
+
+    .process-button::after{
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            border-top: 100px solid red; 
+            border-right: 100px solid transparent;		
+            border-width: 20px 20px 0 0;	
+          
+        }
+
+        @media screen and (max-width: 767px) {
+            .process-section .process-button {
+                width: 100%; 
+                margin: 20px auto; 
+                font-size: 16px; 
+                height: 40px; 
+            }
+        }

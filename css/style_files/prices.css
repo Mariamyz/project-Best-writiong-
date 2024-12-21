@@ -6,6 +6,7 @@
     padding: 10px;
     position: relative;
 }
+
 .price .container .price-header{
     margin: 25px 25px;
     height: 50px;
@@ -18,6 +19,7 @@
     padding: 0px 25px;
     border-radius: 3px;
 }
+
 .price .container .price-header::after {
     content: '';
     position: absolute;
@@ -27,11 +29,13 @@
     border-width: 40px 40px 0 0;
     border-color: var(--color_btn_read_more_hover) transparent transparent transparent;
 }
+
 .price .container .price-header .discount{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .price .container .price-header .discount h2{
     font-size: 50px;
     letter-spacing: -2px;
@@ -39,12 +43,14 @@
     font-weight: 700;
     font-family: Roboto_Regular;
 }
+
 .price .container .price-header .discount span{
     font-size: 37px;
     color: var(--color_btn_order_now);
     font-weight: 400;
     font-family: Roboto_Medium;
 }
+
 .price .container .price-header .discount p{
     font-size: 22px;
     line-height: 15px;
@@ -54,11 +60,13 @@
     font-family: Roboto_Regular;
     margin: 10px 0px 0px 10px;
 }
+
 .price-header .arrow{
     position: absolute;
     right: 400px;
     width: 22px;
 }
+
 .price .options-list,
 .price .price-summary{
     margin-left: 40px;
@@ -68,6 +76,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 .options-list p,
 .price-summary p{
     font-size: 18px;
@@ -76,6 +85,7 @@
     font-family: Roboto_Regular;
     text-transform: uppercase;
 }
+
 .options-list select,
 .price-summary select{
     width: 300px;
@@ -91,12 +101,15 @@
     appearance: none;
     border-radius: 3px;
 }
+
 .options-list select option{
     color: var(--color_p_text);
 }
+
 .price-summary .total-price{
     display: flex;
 }
+
 .price-summary .total-price p{
     font-size: 18px;
     text-transform: uppercase;
@@ -105,15 +118,18 @@
     font-family: Roboto_Regular;
     margin-top: 70px;
 }
+
 .price-summary .total-price h2{
     font-size: 48px;
     color: var(--color_btn_text);
     font-weight: 400;
     font-family: Roboto_Regular;
 }
+
 .price-summary .total-price span{
     font-size: 25px;
 }
+
 .order-now{
     margin-top: 60px;
     width: 300px;
@@ -132,6 +148,7 @@
     font-weight: 400;
     font-family: Roboto_Regular;
 }
+
 .order-now::after{
         content: '';
         position: absolute;
@@ -190,7 +207,6 @@
         }
     }
     
-    
     @media screen and (max-width: 576px) {
         .price .price-header .discount h2 {
             font-size: 40px;
@@ -207,18 +223,20 @@
             font-size: 20px;
         }
     }
+
     .price .container .price-header .discount {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: #caddea; /* Світлий фон /
+        background-color: #caddea; 
         height: 50px;
         width: 400px;
-        margin left: 70px ; / Центрування */
+        margin left: 70px ; 
         
     }
+
     .price .container .price-header .discount p {
         font-size: 18px;
         color:#075da2 !important; 
@@ -235,7 +253,7 @@
     
     .price .container .price-header .discount span {
         font-size: 24px;
-        color: red; /* Синій для % */
+        color: red; 
         font-weight: 500;
     }
     
@@ -248,36 +266,32 @@
 
     .price-header {
         display: flex;
-        flex-direction: row; /* Розташування елементів у рядок */
+        flex-direction: row; 
         justify-content: space-between;
         align-items: center;
     }
     
-
-
     .price .container {
         display: flex;
         flex-direction: column; 
     }
 
-    
     @media screen and (max-width: 576px) {
         .price .container {
             display: flex;
-            flex-direction: column; /* Елементи розташовуються вертикально /
-            align-items: center; / Центрування по горизонталі /
-            gap: 10px; / Відстань між елементами */
-        }
+            flex-direction: column; 
+        
     
         .price .container .price-header {
-            flex-direction: column; /* Блок заголовка у стовпчик */
+            flex-direction: column; 
             text-align: center;
             padding:10px;
         }
+    }
     
         .price .options-list,
         .price .price-summary {
-            flex-direction: column; /* Списки та ціна у стовпчик */
+            flex-direction: column; 
             align-items: center;
             width: 100%;
             gap: 10px;
@@ -285,7 +299,7 @@
     
         .price .options-list select,
         .price .price-summary select {
-            width: 90%; /* Ширина селекторів */
+            width: 90%; 
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -296,7 +310,7 @@
         }
     
         .order-now {
-            width: 90%;
+            width: 100%;
             max-width: 300px;
             background-color: red;
             color: white;
@@ -306,6 +320,16 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease; 
+        }
+    
+    }
+
+    @media screen and (max-width: 767px) {
+        .order-now {
+            width: 100%; 
+            margin: 20px auto; 
+            font-size: 16px; 
+            height: 40px; 
         }
     }
-    

@@ -1,4 +1,3 @@
-
 nav{
     height: 55px;
     display: flex;
@@ -41,12 +40,9 @@ nav ul li::after{
 nav ul li a:hover{
     background: var(--color_btn_send_message_hover);
     color: var(--color_btn_text_hover);
-    box-shadow: -6px 0px 0px var(--color_btn_send_message_hover),
-    6px 0px 0px var(--color_btn_send_message_hover);
+    box-shadow: -15px 0px 0px var(--color_btn_send_message_hover), 10px 0px 0px var(--color_btn_send_message_hover);
     z-index: 1;
 }
-
-
 
 nav ul li:nth-child(9)::after{
     border: none;
@@ -104,5 +100,4 @@ nav .live_chat:hover::after{
     
 nav .login:hover, nav .live_chat:hover{
     color: var(--color_btn_text_hover);
-} */ */
-
+} */ 
